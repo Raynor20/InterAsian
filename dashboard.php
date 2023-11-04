@@ -271,10 +271,11 @@ if ($result) {
                                     </div>
                                         <form>
                                             <div class="modal-body">
-                                                
-                                                    <label for="editTitle">Title:</label>
-                                                    <input type="text" id="editTitle" name="editTitle">
-                                                    <br/>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">Title</span>
+                                                        <input type="text" class="form-control" id="editTitle" name="editTitle"
+                                                            aria-label="Title" aria-describedby="basic-addon1" required>
+                                                    </div>
 
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text" id="basic-addon1">Location</span>
