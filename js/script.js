@@ -15,6 +15,12 @@ function openEditModal(listing_id) {
       success:function(data){  
         $('#editTitle').val(data.title);
         $('#editLocation').val(data.location);
+        $('#editLandarea').val(data.landarea);
+        $('#editFloorarea').val(data.floorarea);
+        $('#editBedrooms').val(data.bedrooms);
+        $('#editBathrooms').val(data.bathrooms);
+        $('#editPrice').val(data.price);
+        $('#editDescription').val(data.description);
         $('#exampleModal2').modal('show'); // Show the modal
       }  
  });  

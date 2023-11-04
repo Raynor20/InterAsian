@@ -274,18 +274,73 @@ if ($result) {
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text" id="basic-addon1">Title</span>
                                                         <input type="text" class="form-control" id="editTitle" name="editTitle"
-                                                            aria-label="Title" aria-describedby="basic-addon1" required>
+                                                            aria-label="title" aria-describedby="basic-addon1" required>
                                                     </div>
 
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text" id="basic-addon1">Location</span>
                                                         <input type="text" class="form-control" id="editLocation" name="editLocation"
-                                                            aria-label="Location" aria-describedby="basic-addon1" required>
+                                                            aria-label="location" aria-describedby="basic-addon1" required>
                                                     </div>
-                                            </div>
+                                                            <div class="row">
+                                                            <div class="col">
+                                                                <div class="input-group mb-1">
+                                                                    <span class="input-group-text" id="basic-addon1">Land
+                                                                        Area</span>
+                                                                    <input type="text" class="form-control" aria-label="landarea"
+                                                                        id="editLandarea" name="editLandarea" aria-describedby="basic-addon1"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="input-group mb-3">
+                                                                    <span class="input-group-text" id="basic-addon1">Floor
+                                                                        Area</span>
+                                                                    <input type="text" class="form-control" aria-label="floorarea"
+                                                                        id="editFloorarea" name="editFloorarea" aria-describedby="basic-addon1"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="input-group mb-1">
+                                                                    <span class="input-group-text" id="basic-addon1"># of
+                                                                        Bedrooms</span>
+                                                                    <input type="text" class="form-control" aria-label="bedrooms"
+                                                                        id="editBedrooms" name="editBedrooms" aria-describedby="basic-addon1"
+                                                                        required>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col">
+                                                                <div class="input-group mb-3">
+                                                                    <span class="input-group-text" id="basic-addon1"># of
+                                                                        Bathrooms</span>
+                                                                    <input type="text" class="form-control" aria-label="bathrooms"
+                                                                        id="editBathrooms" name="editBathrooms" aria-describedby="basic-addon1"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text">Price</span>
+                                                            <input type="text" class="form-control" id="editPrice" name="editPrice"
+                                                                aria-label="Amount (to the nearest peso)" required>
+                                                            <span class="input-group-text">.00</span>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text">Description</span>
+                                                            <textarea class="form-control" aria-label="With textarea" id="editDescription"
+                                                                name="editDescription" required></textarea>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                                                            <input type="file" name="image[]" class="form-control" id="inputGroupFile01"
+                                                                multiple>
+                                                        </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                <a href="update_listing.php"><button type="button" class="btn btn-primary">Save changes</button></a>
                                             </div>
                                         </form>
                                     </div>
