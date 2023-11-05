@@ -187,6 +187,8 @@ if ($result) {
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" name="submit" class="btn btn-warning">Save
+                                    changes</button>
                             </form>
                         </div>
                     </div>
@@ -266,12 +268,13 @@ if ($result) {
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Record</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                        <form>
+                                        <form id="updateForm" action="update_listing.php" method="post" enctype="multipart/form-data">
                                             <div class="modal-body">
                                                     <div class="input-group mb-3">
+                                                        <input type="hidden" id="listing_id" name="listing_id">
                                                         <span class="input-group-text" id="basic-addon1">Title</span>
                                                         <input type="text" class="form-control" id="editTitle" name="editTitle"
                                                             aria-label="title" aria-describedby="basic-addon1" required>
@@ -340,7 +343,7 @@ if ($result) {
                                                         </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <a href="update_listing.php"><button type="button" class="btn btn-primary">Save changes</button></a>
+                                                <button type="submit" name="submit" class="btn btn-warning">Save changes</button>
                                             </div>
                                         </form>
                                     </div>

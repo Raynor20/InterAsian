@@ -13,6 +13,7 @@ function openEditModal(listing_id) {
       data:{listing_id:listing_id},  
       dataType:"json",  
       success:function(data){  
+        $('#listing_id').val(data.listing_id);
         $('#editTitle').val(data.title);
         $('#editLocation').val(data.location);
         $('#editLandarea').val(data.landarea);

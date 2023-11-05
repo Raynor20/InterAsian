@@ -44,7 +44,7 @@ if (isset($_POST["submit"])) {
     $res = mysqli_query($conn, $query);
 
     if ($res) {
-        header("Location: index.php");
+        header("Location: dashboard.php");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
